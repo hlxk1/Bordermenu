@@ -6,6 +6,7 @@
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include "registform.h"
+#include "menuform.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }

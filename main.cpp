@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
     if(!query.exec(table)){
         qDebug()<<"创建表失败";
     }
-    MainWindow w;
+    MenuForm w;
     w.show();
     return a.exec();
 }

@@ -16,16 +16,28 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    billform.cpp \
+    foodform.cpp \
+    guodiform.cpp \
     main.cpp \
     mainwindow.cpp \
+    menuform.cpp \
     registform.cpp
 
 HEADERS += \
+    billform.h \
+    foodform.h \
+    guodiform.h \
     mainwindow.h \
+    menuform.h \
     registform.h
 
 FORMS += \
+    billform.ui \
+    foodform.ui \
+    guodiform.ui \
     mainwindow.ui \
+    menuform.ui \
     registform.ui
 
 # Default rules for deployment.
