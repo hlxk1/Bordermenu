@@ -20,6 +20,8 @@ void RegistForm::on_pushButton_clicked()
     QSqlQuery query;
     QString username = ui->userEdit->text();
     QString passwd = ui->passwdEdit->text();
+    QWidget *w = this->parentWidget();
+    MainWindow *login = dynamic_cast<MainWindow*>(w);
     // 插入数据
     QString str = QString("INSERT INTO user (name,password) "
                           "VALUES ('%1','%2')").arg(username).arg(passwd);
@@ -27,6 +29,8 @@ void RegistForm::on_pushButton_clicked()
     if(!query.exec(str)){
         qDebug()<<"插入数据失败";
     }else{
+        login->show();
         this->close();
+
     }
 }

@@ -20,6 +20,7 @@ void MainWindow::on_reigstButton_clicked()
 {
     RegistForm *regist = new RegistForm;
     regist->show();
+//    this->hide();
 
 }
 
@@ -41,5 +42,9 @@ void MainWindow::on_loginButton_clicked()
         qDebug()<< "密码输入错误";
     }else{
         qDebug()<<"登录成功";
+//        QWidget *w = this->parentWidget();
+//        MenuForm *menu = dynamic_cast<MenuForm*>(w);
+//        menu->show();
+        this->close();
     }
 }

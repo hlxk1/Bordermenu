@@ -27,6 +27,5 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    QWidget *regist;
 };
 #endif // MAINWINDOW_H

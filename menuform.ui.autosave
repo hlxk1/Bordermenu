@@ -118,8 +118,8 @@
         <rect>
          <x>0</x>
          <y>80</y>
-         <width>1021</width>
-         <height>421</height>
+         <width>1033</width>
+         <height>422</height>
         </rect>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -155,7 +155,7 @@
              <x>0</x>
              <y>0</y>
              <width>135</width>
-             <height>417</height>
+             <height>418</height>
             </rect>
            </property>
            <widget class="QWidget" name="layoutWidget">
@@ -242,7 +242,20 @@
          </widget>
         </item>
         <item>
-         <widget class="QTableWidget" name="FoodWidget"/>
+         <widget class="QTableWidget" name="FoodWidget">
+          <property name="minimumSize">
+           <size>
+            <width>888</width>
+            <height>420</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>420</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>

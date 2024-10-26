@@ -5,6 +5,7 @@
 #include <QtDebug>
 #include <QSqlDatabase>
 #include <QSqlQuery>
+#include "mainwindow.h"
 namespace Ui {
 class RegistForm;
 }
