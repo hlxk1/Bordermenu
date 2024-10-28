@@ -26,7 +26,21 @@ int main(int argc, char *argv[])
     if(!query.exec(table)){
         qDebug()<<"创建表失败";
     }
+    table =
+            "CREATE TABLE if not exists foods ( "
+            "food VARCHAR(255) NOT NULL,"
+            "name_cn VARCHAR(255),"
+            "name_en VARCHAR(255),"
+            "foodinfo TEXT,"
+           " path VARCHAR(255),"
+         "   price DECIMAL(10, 2)"
+        ");";
+    if(!query.exec(table)){
+        qDebug()<<"创建表失败";
+    }
     MenuForm w;
     w.show();
+//    FoodForm fw;
+//    fw.show();
     return a.exec();
 }

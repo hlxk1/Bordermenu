@@ -25,10 +25,10 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>370</x>
+     <x>300</x>
      <y>150</y>
      <width>411</width>
      <height>261</height>
